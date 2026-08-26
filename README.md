@@ -1,6 +1,6 @@
-# 🖥️ Arquitetura e Organização de Computadores I
+# 🖥️ Arquitetura e Organização de Computadores II
 
-Este repositório reúne as implementações desenvolvidas durante a disciplina de **Arquitetura e Organização de Computadores I** do **CEFET-MG – Campus Divinópolis**. Seu objetivo é organizar os exemplos e projetos produzidos pelo grupo, servindo como material de estudo, consulta e apoio ao aprendizado dos conceitos abordados em sala de aula.
+Este repositório reúne as implementações desenvolvidas durante a disciplina de **Arquitetura e Organização de Computadores II** do **CEFET-MG – Campus Divinópolis**. Seu objetivo é organizar os exemplos e projetos produzidos pelo grupo, servindo como material de estudo, consulta e apoio ao aprendizado dos conceitos abordados em sala de aula.
 
 ---
 
@@ -40,7 +40,6 @@ Cada projeto está organizado em sua própria pasta, contendo os arquivos necess
 ## 👥 Integrantes
 
 - Pedro Francisco
-- Felipe Silva
 - Pedro Henrique Sousa
 - Felipe Cortes
 
