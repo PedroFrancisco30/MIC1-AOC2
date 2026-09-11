@@ -21,38 +21,6 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 88 176 256 192)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "C[31..0]" (rect 5 0 46 12)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
-	(rect -40 248 144 264)
-	(text "INPUT" (rect 141 0 169 10)(font "Arial" (font_size 6)))
-	(text "REG_READ[0..3]" (rect 5 0 92 12)(font "Arial" ))
-	(pt 184 8)
-	(drawing
-		(line (pt 100 12)(pt 125 12))
-		(line (pt 100 4)(pt 125 4))
-		(line (pt 129 8)(pt 184 8))
-		(line (pt 100 12)(pt 100 4))
-		(line (pt 125 4)(pt 129 8))
-		(line (pt 125 12)(pt 129 8))
-	)
-	(text "VCC" (rect 144 7 164 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
 	(rect 24 456 192 472)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "CLOCK" (rect 5 0 42 12)(font "Arial" ))
@@ -69,9 +37,9 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 24 408 192 424)
+	(rect 8 352 176 368)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "LOAD" (rect 5 0 35 12)(font "Arial" ))
+	(text "LOAD" (rect 5 0 34 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -85,25 +53,41 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 16 512 200 528)
-	(text "INPUT" (rect 141 0 169 10)(font "Arial" (font_size 6)))
-	(text "REG_WRITE[8..0]" (rect 5 0 96 12)(font "Arial" ))
-	(pt 184 8)
+	(rect 48 80 216 96)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "MIR[35..0]" (rect 5 0 57 12)(font "Arial" ))
+	(pt 168 8)
 	(drawing
-		(line (pt 100 12)(pt 125 12))
-		(line (pt 100 4)(pt 125 4))
-		(line (pt 129 8)(pt 184 8))
-		(line (pt 100 12)(pt 100 4))
-		(line (pt 125 4)(pt 129 8))
-		(line (pt 125 12)(pt 129 8))
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
 	)
-	(text "VCC" (rect 144 7 164 17)(font "Arial" (font_size 6)))
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 88 176 256 192)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "IN_C[31..0]" (rect 5 0 63 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
 )
 (pin
 	(output)
 	(rect 1032 240 1208 256)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "B[31..0]" (rect 90 0 128 12)(font "Arial" ))
+	(text "OUT_B[31..0]" (rect 90 0 157 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -331,31 +315,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 144 256)
-	(pt 192 256)
-	(bus)
-)
-(connector
-	(text "REG_READ[0]" (rect 250 264 323 276)(font "Arial" ))
-	(pt 304 280)
-	(pt 240 280)
-)
-(connector
-	(text "REG_READ[1]" (rect 250 280 323 292)(font "Arial" ))
-	(pt 304 296)
-	(pt 240 296)
-)
-(connector
-	(text "REG_READ[2]" (rect 226 296 299 308)(font "Arial" ))
-	(pt 304 312)
-	(pt 216 312)
-)
-(connector
-	(text "REG_READ[3]" (rect 170 312 243 324)(font "Arial" ))
-	(pt 256 328)
-	(pt 160 328)
-)
-(connector
 	(pt 368 304)
 	(pt 496 304)
 )
@@ -366,16 +325,6 @@ applicable agreement for further details.
 (connector
 	(pt 496 344)
 	(pt 536 344)
-)
-(connector
-	(pt 200 520)
-	(pt 240 520)
-	(bus)
-)
-(connector
-	(text "REG_WRITE[7]" (rect 288 400 365 412)(font "Arial" ))
-	(pt 336 416)
-	(pt 288 416)
 )
 (connector
 	(pt 192 464)
@@ -405,18 +354,6 @@ applicable agreement for further details.
 	(pt 816 248)
 	(pt 1032 248)
 	(bus)
-)
-(connector
-	(pt 192 416)
-	(pt 264 416)
-)
-(connector
-	(pt 264 360)
-	(pt 264 416)
-)
-(connector
-	(pt 264 360)
-	(pt 440 360)
 )
 (connector
 	(pt 440 360)
@@ -461,5 +398,39 @@ applicable agreement for further details.
 (connector
 	(pt 552 504)
 	(pt 584 504)
+)
+(connector
+	(pt 176 360)
+	(pt 440 360)
+)
+(connector
+	(pt 216 88)
+	(pt 280 88)
+	(bus)
+)
+(connector
+	(text "MIR[3]" (rect 170 312 203 324)(font "Arial" ))
+	(pt 256 328)
+	(pt 160 328)
+)
+(connector
+	(text "MIR[2]" (rect 170 296 203 308)(font "Arial" ))
+	(pt 160 312)
+	(pt 304 312)
+)
+(connector
+	(text "MIR[1]" (rect 170 280 203 292)(font "Arial" ))
+	(pt 160 296)
+	(pt 304 296)
+)
+(connector
+	(text "MIR[0]" (rect 170 264 203 276)(font "Arial" ))
+	(pt 304 280)
+	(pt 160 280)
+)
+(connector
+	(text "MIR[14]" (rect 288 400 326 412)(font "Arial" ))
+	(pt 336 416)
+	(pt 288 416)
 )
 (junction (pt 552 504))
