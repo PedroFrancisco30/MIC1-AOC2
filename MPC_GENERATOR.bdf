@@ -21,25 +21,9 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 128 32 296 48)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "MIR[35..0]" (rect 5 0 57 12)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
 	(rect 128 56 296 72)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "CLOCK" (rect 5 0 43 12)(font "Arial" ))
+	(text "CLOCK" (rect 5 0 42 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -55,7 +39,7 @@ applicable agreement for further details.
 	(input)
 	(rect 128 80 296 96)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "N" (rect 5 0 14 12)(font "Arial" ))
+	(text "N" (rect 5 0 13 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -71,7 +55,7 @@ applicable agreement for further details.
 	(input)
 	(rect 128 104 296 120)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "Z" (rect 5 0 13 12)(font "Arial" ))
+	(text "Z" (rect 5 0 12 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -85,9 +69,41 @@ applicable agreement for further details.
 )
 (pin
 	(input)
+	(rect 128 32 296 48)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "JAM[2..0]" (rect 5 0 53 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 88 192 296 208)
+	(text "INPUT" (rect 165 0 193 10)(font "Arial" (font_size 6)))
+	(text "NEXT_ADDRESS[8..0]" (rect 5 0 117 12)(font "Arial" ))
+	(pt 208 8)
+	(drawing
+		(line (pt 124 12)(pt 149 12))
+		(line (pt 124 4)(pt 149 4))
+		(line (pt 153 8)(pt 208 8))
+		(line (pt 124 12)(pt 124 4))
+		(line (pt 149 4)(pt 153 8))
+		(line (pt 149 12)(pt 153 8))
+	)
+	(text "VCC" (rect 168 7 188 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
 	(rect 128 152 296 168)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "MBR[7..0]" (rect 5 0 55 12)(font "Arial" ))
+	(text "MBR_IN[7..0]" (rect 5 0 73 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -418,16 +434,6 @@ applicable agreement for further details.
 	(pt 928 248)
 )
 (connector
-	(text "MIR[25]" (rect 378 224 416 236)(font "Arial" ))
-	(pt 472 240)
-	(pt 368 240)
-)
-(connector
-	(text "MIR[24]" (rect 378 280 416 292)(font "Arial" ))
-	(pt 472 296)
-	(pt 368 296)
-)
-(connector
 	(text "Z" (rect 378 264 385 276)(font "Arial" ))
 	(pt 368 280)
 	(pt 472 280)
@@ -438,23 +444,12 @@ applicable agreement for further details.
 	(pt 368 224)
 )
 (connector
-	(text "MBR[7..0]" (rect 418 416 467 428)(font "Arial" ))
-	(pt 512 432)
-	(pt 408 432)
-	(bus)
-)
-(connector
 	(pt 640 256)
 	(pt 624 256)
 )
 (connector
 	(pt 624 256)
 	(pt 624 352)
-)
-(connector
-	(text "MIR[35]" (rect 434 336 472 348)(font "Arial" ))
-	(pt 624 352)
-	(pt 424 352)
 )
 (connector
 	(text "CLOCK" (rect 778 248 815 260)(font "Arial" ))
@@ -465,22 +460,6 @@ applicable agreement for further details.
 	(text "CLOCK" (rect 778 448 815 460)(font "Arial" ))
 	(pt 800 464)
 	(pt 768 464)
-)
-(connector
-	(pt 648 456)
-	(pt 600 456)
-	(bus)
-)
-(connector
-	(text "MIR[34..27]" (rect 522 536 579 548)(font "Arial" ))
-	(pt 600 552)
-	(pt 512 552)
-	(bus)
-)
-(connector
-	(pt 600 456)
-	(pt 600 552)
-	(bus)
 )
 (connector
 	(pt 576 440)
@@ -497,11 +476,6 @@ applicable agreement for further details.
 	(pt 864 448)
 	(pt 928 448)
 	(bus)
-)
-(connector
-	(text "MIR[26]" (rect 418 432 456 444)(font "Arial" ))
-	(pt 512 448)
-	(pt 408 448)
 )
 (connector
 	(pt 120 136)
@@ -528,5 +502,52 @@ applicable agreement for further details.
 (connector
 	(pt 296 160)
 	(pt 352 160)
+	(bus)
+)
+(connector
+	(text "JAM[2]" (rect 418 432 452 444)(font "Arial" ))
+	(pt 512 448)
+	(pt 408 448)
+)
+(connector
+	(text "JAM[0]" (rect 378 280 412 292)(font "Arial" ))
+	(pt 472 296)
+	(pt 368 296)
+)
+(connector
+	(text "JAM[1]" (rect 378 224 412 236)(font "Arial" ))
+	(pt 472 240)
+	(pt 368 240)
+)
+(connector
+	(pt 296 200)
+	(pt 336 200)
+	(bus)
+)
+(connector
+	(text "NEXT_ADDRESS[8]" (rect 434 336 533 348)(font "Arial" ))
+	(pt 624 352)
+	(pt 424 352)
+)
+(connector
+	(pt 648 456)
+	(pt 592 456)
+	(bus)
+)
+(connector
+	(pt 592 456)
+	(pt 592 552)
+	(bus)
+)
+(connector
+	(text "NEXT_ADDRESS[7..0]" (rect 514 536 626 548)(font "Arial" ))
+	(pt 592 552)
+	(pt 504 552)
+	(bus)
+)
+(connector
+	(text "MBR_IN[7..0]" (rect 418 416 485 428)(font "Arial" ))
+	(pt 512 432)
+	(pt 408 432)
 	(bus)
 )
